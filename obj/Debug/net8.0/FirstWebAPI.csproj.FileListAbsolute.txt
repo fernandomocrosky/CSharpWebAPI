@@ -206,3 +206,4 @@ E:\GitHub\FirstWebAPI\obj\Debug\net8.0\refint\FirstWebAPI.dll
 E:\GitHub\FirstWebAPI\obj\Debug\net8.0\FirstWebAPI.pdb
 E:\GitHub\FirstWebAPI\obj\Debug\net8.0\FirstWebAPI.genruntimeconfig.cache
 E:\GitHub\FirstWebAPI\obj\Debug\net8.0\ref\FirstWebAPI.dll
+E:\GitHub\FirstWebAPI\obj\Debug\net8.0\FirstWebAPI.sourcelink.json

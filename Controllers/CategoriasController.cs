@@ -23,10 +23,10 @@ namespace FirstWebAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Categoria>> Get()
         {
-            return _context.Categorias.ToList();
+            return _context.Categorias.AsNoTracking().ToList();
         }
 
-        [HttpGet("{id:int}", Name = "ObterCategoria")]
+        [HttpGet("{id:int:min(1)}", Name = "ObterCategoria")]
         public ActionResult<Categoria> Post(int id)
         {
             var categoria = _context.Categorias.FirstOrDefault(c => c.CategoriaId == id);
@@ -55,7 +55,7 @@ namespace FirstWebAPI.Controllers
             return new CreatedAtRouteResult("ObterCategoria", new { id = categoria.CategoriaId }, categoria);
         }
 
-        [HttpPut("{id:int}")]
+        [HttpPut("{id:int:min(1)}")]
         public ActionResult Put(int id, Categoria categoria)
         {
             if (id != categoria.CategoriaId)
